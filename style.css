@@ -1,0 +1,267 @@
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+.container{
+   display: flex;
+   background: url(images/main-img.jpg);
+   background-size: cover;
+   background-position: center;
+   background-image: -moz-linear-gradient(grey, gray , 100%);
+   height: 650px;
+   justify-content: space-between;
+   
+}
+
+.container .logo{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    align-items: center;
+}
+
+.navbar ul > .active li{
+    color: #fd0e51;
+    font-weight: 600;
+}
+
+.navbar ul li:hover{
+    .active li{
+        display: none;
+    }
+    .navbar ul li:hover{
+    color: #fd0e51;
+    transition: 0.7s;
+    }
+}
+
+.navbar ul #contactBtn{
+    background-color: #fd0e51;
+    margin-right: 10px;
+    margin-top: -5em;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar ul #contactBtn:hover{
+    transform: scale(1.1);
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.content{
+    position: relative;
+    top: -20em;
+    left: 7em;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.mincontent{
+    font-size: 30px;
+    margin-left: -8em;
+    font-weight: 600;
+}
+
+.content > .hr{
+    width: 20%;
+    border: 1px solid #fd0e51;
+    margin-left: 23em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.heading{
+    font-size: 45px;
+    margin-left: -5.6em;
+}
+
+.learnBtn button{
+    background-color: #fd0e51;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: -12em;
+    margin-top: 5px;
+}
+
+.learnBtn button:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: 0.7s ease-out;
+}
+
+.sec2{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2 h2{
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    margin-top: -5em;
+}
+
+.sec2 > .hr{
+    width: 15%;
+    border: 1px solid #fd0e51;
+    margin-left: 34em;
+    margin-top: 8px;
+    margin-bottom: 2em;
+}
+
+.sec2 .cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card > img{
+    width: 60%;
+    height: 200px;
+}
+
+.card > h3{
+    color: gray;
+    font-weight: bold;
+    font-size: 22px;
+}
+.card > p{
+    width: 70%;
+    text-align: center;
+    margin-left: 5em;
+    margin-top: 5px;
+}
+
+.card > .btnLearn{
+    background-color: #fd0e51;
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 2em;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.card > .btnLearn:hover{
+    background-color: black;
+    cursor: pointer;
+    transition: 0.7s ease-out;
+}
+
+@media (max-width: 450px) {
+    .container{
+        display: block;
+        background: url(images/main-img.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding-left: 2em;
+        margin-top: -3em;
+    }
+    
+
+    .navbar ul{
+        display: flex;
+        list-style-type: none;
+        margin-left: -2em;
+    }
+    
+    .navbar ul li{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .navbar ul #contactBtn{
+        background-color: #fd0e51;
+        margin-right: 10px;
+        margin-top: -5em;
+        padding: 10px;
+        border: none;
+        border-radius: 50px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .container .logo{
+        color: #fff;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .content{
+        position: relative;
+        top: -20em;
+        left: 8.1em;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec2 .cards{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        text-align: center;
+        align-items: center;
+    }
+    
+ 
+    .card > p{
+        width: 70%;
+        text-align: center;
+        margin-left: 4em;
+        margin-top: 5px;
+    }
+    
+
+}
+
+
+
